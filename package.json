@@ -1,10 +1,10 @@
 {
   "name": "finalexams",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,5 +14,15 @@
   },
   "devDependencies": {
     "mocha": "^9.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IDU-SW/202112713_KCH.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/IDU-SW/202112713_KCH/issues"
+  },
+  "homepage": "https://github.com/IDU-SW/202112713_KCH#readme",
+  "description": ""
 }

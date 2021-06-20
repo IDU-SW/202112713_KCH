@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.6",
     "gitHub": "^1.0.0",
     "moment": "^2.29.1"
   },

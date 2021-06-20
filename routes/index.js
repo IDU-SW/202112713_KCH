@@ -1,9 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const todo = require('./todo/index');
-const todoGroup = require('./todoGroup/index')
-
-router.use('/product', todo);
-router.use('/todoGroup', todoGroup)
+const product = require('./product/index');
+const cate = require('./cate/index');
 
 module.exports = router;

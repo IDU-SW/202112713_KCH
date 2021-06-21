@@ -14,3 +14,5 @@ function connect() {
         console.log('Sequelize DB 실패');
     })
 }
+
+module.exports = conn;

@@ -1,13 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const product = require('./product/index');
-const cate = require('./cate/index');
+const keyboard = require('./keyboard/index');
 
-router.use('/product', product)
-router.use('/cate', cate)
+router.use('/keyboard', keyboard);
 
 router.get('/', async (req,res)=>{
-    res.render('index');
+    res.redirect('/io-info/keyboard');
 })
 
 module.exports = router;

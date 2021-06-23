@@ -1,9 +1,56 @@
-<html>
-    <head>
-        <title>키보드 정보 사이트</title>
-    </head>
-    <body>
-        <h1>메뉴</h1>
-        <a href="io-info/product/create">입력</a>
-    </body>
-</html>
+<%-include('header')%>
+
+    <a style="float: right; margin-left: 10px;" type="button" class="btn btn-primary" href="keyboard/create">
+        키보드 추가
+    </a>
+    <!-- <a style="float: right;" type="button" class="btn btn-secondary" href="io-info/product/create">
+            키보드 조회
+        </a> -->
+
+    <table class="table" style="text-align: center;">
+        <thead>
+            <tr>
+                <th scope="col">키보드명</th>
+                <th scope="col">브랜드</th>
+                <th scope="col">타입</th>
+                <th scope="col">status</th>
+                <th scope="col">key</th>
+                <th scope="col">가격</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <% data.forEach(function(item) { %>
+            <tr>
+                <th>
+                    <!--여기 edit form이랑 연결되도록 링크-->
+                    <a class="edit"  href="keyboard/edit/<%= item.id%>">
+                        <%= item.name %>
+                    </a>
+                </th>
+                <td>
+                    <%= item.brand %>
+                </td>
+                <td>
+                    <%= item.keytype %>
+                </td>
+                <td>
+                    <%= item.status %>
+                </td>
+                <td>
+                    <%= item.code %>
+                </td>
+                <td>
+                    <%= item.price %>
+                </td>
+                <td>
+                    <a href="keyboard/delete/<%= item.id%>"style="float: right;" type="button" class="btn btn-danger"
+                        onclick="return confirm('<%= item.name%>를 삭제하시겠습니까?');" >삭제
+                    </a>
+                </td>
+            </tr>
+            <%})%>
+        </tbody>
+    </table>
+    </div>
+    <%-include('footer')%>

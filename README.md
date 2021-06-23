@@ -2,8 +2,8 @@
 ## ⌨ 키보드 정보 페이지
 
 <br>
-<img src="views/lib/main.JPG" alt="main"></img>
-<img src="views/lib/modal.png" alt="main"></img>
+<img src="views/lib/main.jpg" alt="main"></img>
+<img src="views/lib/edit.jpg" alt="main"></img>
 <br>
 <br>
 
